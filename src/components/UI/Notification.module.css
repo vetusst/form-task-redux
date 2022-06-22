@@ -1,0 +1,40 @@
+.notification-wrapper {
+    position: fixed;
+    top: -60px;
+    animation: enter-leave 3s ease-in-out;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 42px;
+    background-color: white;
+    z-index: 11;
+    padding: 10px;
+    border-radius: 5px;
+}
+.notification-wrapper span {
+    display: flex;
+    line-height: 20px;
+}
+.error {
+    color: #ff4343;
+}
+.success {
+    color: #00ab0b;
+}
+
+@keyframes enter-leave {
+    0% {
+        top: -60px;
+    }
+
+    10% {
+        top: 16px;
+    }
+
+    90% {
+        top: 16px;
+    }
+
+    100% {
+        top: -60px;
+    }
+}
